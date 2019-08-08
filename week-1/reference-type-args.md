@@ -195,7 +195,11 @@ not the best choice, it can be much more difficult to think about and debug.
 ```js
 {
   function copy_array(arr) {
-    // write this
+     const arr2=[];
+    for(let i=(arr.length)-1;i>=0;i--){
+       arr2[i]=arr[i];
+    }
+    return arr2
   }
 
   const array = ['a', 'b'];
