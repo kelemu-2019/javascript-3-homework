@@ -223,11 +223,15 @@ not the best choice, it can be much more difficult to think about and debug.
 [on pytut](http://www.pythontutor.com/live.html#code=&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
-  function start_new_array(arr) {
-    // write this by building a new array from scratch
-    // the paramenter should only be used on the right side of =
-    // the new one should only be used on the left side of =
+ function start_new_array(arr) {
+   
+    const copy_new_array =[];
+    for(let i=0;i<arr.length;i++){
+      copy_new_array.push(arr[i]);
+      
   }
+  return copy_new_array;
+}
 
   const array = ['a', 'b'];
   const new_array = start_new_array(array);
