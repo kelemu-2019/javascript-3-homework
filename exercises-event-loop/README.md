@@ -40,19 +40,23 @@ your solution must be formatted like this.  If it is not, there may be errors wh
 ```html
       <script id="solution-1">
 { // replace the "null"s with a number of milliseconds
-  let x = "";
+   let x = " ";
 
   setTimeout(function assert_x() {
-      console.assert(x === "javascript", "exercise 1");
-  }, null);
+console.log(x);
+      console.assert(x === " javascript", "exercise 1");
+
+  }, 8000);
 
   setTimeout(function append_firstname() {
       x += "java";
-  }, null);
+    console.log(x);
+  }, 0);
 
   setTimeout(function append_lastname() {
       x += "script";
-  }, null);
+console.log(x);
+  }, 4000);
 
 }
       </script>
